@@ -1,0 +1,11 @@
+/* 8. CUSTOM LAYOUT & TYPOGRAPHY (Daddy bear)
+----------------------------------------------------------------------------------------*/
+#overlay-18 { padding-top: 2.5em; }
+
+
+/* 9. CUSTOM LAYOUT & TYPOGRAPHY (Mummy bear)
+----------------------------------------------------------------------------------------*/
+@media screen and (min-width: 30em) and (max-width: 63.236em) {
+
+	#overlay-18 { padding-top: 2.5em; }	
+}
