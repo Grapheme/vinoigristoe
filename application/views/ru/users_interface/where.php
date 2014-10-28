@@ -86,8 +86,6 @@
 						</div>
 						<div class="spline"></div> -->
 						<div class="shops cf">
-							<div class="column">
-								<h3>Фирменные магазины:</h3>
 							<?php 
 								$cntfs = count($firms_shops);
 								$cntcs = count($chain_shops);
@@ -97,6 +95,9 @@
 									$cntfs = $cntcs = 5;
 								endif;
 							?>
+						<?php if($cntfs > 0):?>
+							<div class="column">
+								<h3>Фирменные магазины:</h3>
 							<?php for($i=0;$i<$cntfs;$i++):?>
 								<div class="shop-item">
 									<div class="title"><?=$firms_shops[$i]['title'];?></div>
@@ -116,6 +117,8 @@
 								</div>
 							<?php endif;?>
 							</div>
+						<?php endif;?>
+						<?php if($cntcs > 0):?>
 							<div class="column">
 								<h3>Сетевые магазины:</h3>
 								<?php for($i=0;$i<$cntcs;$i++):?>
@@ -137,6 +140,7 @@
 								</div>
 							<?php endif;?>
 							</div>
+						<?php endif;?>
 							<div class="cf"> </div>
 						<?php if($show):?>
 							<?=anchor('#','Показать еще',array('class'=>'show-all none'));?>
